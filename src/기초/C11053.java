@@ -24,9 +24,9 @@ public class C11053 {
         Arrays.fill(dp, 1);
         for (int i = 0; i <n; i++) {
 
-            for (int j = 0; j < n; j++) {
+            for (int j = 0; j < i; j++) {
 
-                if(nums[i] < nums[j]){
+                if(nums[i] > nums[j]){
                     dp[i] =  Math.max(dp[i],dp[j]+1);
                 }
             }
