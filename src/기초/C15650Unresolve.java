@@ -1,5 +1,6 @@
 package 기초;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class C15650Unresolve {
@@ -56,6 +57,9 @@ public class C15650Unresolve {
 
         //중복 제거가 아니라
         //애초에 들어가지 않도록.
+
+
+
 
 
 
