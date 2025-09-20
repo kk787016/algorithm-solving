@@ -30,7 +30,7 @@ public class C11047 {
         int result = 0;
 
 
-        for (int i = N-1; i >= 0; i--) {
+        for (int i = N-1; i >= 0; i--)  {
             // 6  1000
             if (nums[i] <= M) {
                 result = result +  M/nums[i];
