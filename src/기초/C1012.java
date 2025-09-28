@@ -55,8 +55,6 @@ public class C1012 {
             }
             result.add(resultCount);
 
-
-
         }
         for (int i : result) {
             System.out.print(i + " ");
