@@ -29,16 +29,18 @@ public class C1697Unresolve {
 
         bfs();
 
-        
+
 
     }
 
     public static void bfs() {
-        int result =0;
-
         Queue<Integer> queue = new LinkedList<>();
         queue.offer(N);
         visited[N] = 1;
+        if (N == M) {
+            System.out.println("0");
+            return ;
+        }
 
         while(!queue.isEmpty()){
             int cur = queue.poll();
@@ -49,7 +51,7 @@ public class C1697Unresolve {
                     return;
                 }
 
-                if (nextPos >=0 && nextPos<= 100001 && visited[nextPos] ==0) {
+                if (nextPos >=0 && nextPos<= 200001 && visited[nextPos] ==0) {
                     visited[nextPos] = visited[cur]+1;
                     queue.offer(nextPos);
                 }
